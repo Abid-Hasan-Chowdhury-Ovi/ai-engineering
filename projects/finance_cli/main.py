@@ -1,16 +1,17 @@
-from cli_io import ask_text, ask_number, ask_whole_number, show_message, show_transaction
+title = 'Personal Finance Tracker'
+print(f'{'_'*10}+{title}+{'_'*10}')
 
+name =input('What is your name?')
+description = input('What did you buy?')
 
-def main() -> None:
-    show_message("=== Personal Finance Tracker ===")
-    name: str = ask_text("What is your name? ")
-    description: str = ask_text("What did you buy? ")
-    unit_price: float = ask_number("Price of one item: ")
-    quantity: int = ask_whole_number("How many items? ")
-    total: float = unit_price * quantity
-    show_message(f"Thanks, {name}. Here is your record:")
-    show_transaction(description, total)
+price_text=input('Price of One Item: ')
+unit_price=float(price_text)
 
+quantity_text= input('How many times?')
+quantity= int(quantity_text)
 
-if __name__ == "__main__":
-    main()
+total = unit_price*quantity
+
+print('Thanks', name)
+print("Here is your record: ")
+print(description,total)
