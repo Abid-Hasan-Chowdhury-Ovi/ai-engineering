@@ -6,3 +6,4 @@ Each project lives in its own folder under `projects/`.
 ## Projects
 
 - `projects/finance_cli`: Personal finance command-line tracker (Python)
+Run: `python projects/finance_cli/main.py`
